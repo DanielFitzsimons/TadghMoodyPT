@@ -17,7 +17,7 @@ const RULES = [
   {
     n: "02",
     title: "Commit properly",
-    line: "Real change is months — not motivation weeks.",
+    line: "Real change is months. Not motivation weeks.",
     body:
       "Stop expecting a transformation from inconsistent weeks. We commit. We execute. We review.",
   },
@@ -31,7 +31,7 @@ const RULES = [
   {
     n: "04",
     title: "Stop changing plans weekly",
-    line: "Consistency beats novelty — every time.",
+    line: "Consistency beats novelty. Every time.",
     body:
       "Pick a plan that fits your life and run it long enough to measure it. Your training must complement your lifestyle.",
   },
@@ -47,7 +47,7 @@ const RULES = [
     title: "Be patient",
     line: "Results don’t rush for anyone.",
     body:
-      "This is a long game. The goalposts move — learn to love the process and stay driven by the day-to-day.",
+      "This is a long game. The goalposts move. Learn to love the process and stay driven by the day-to-day.",
   },
   {
     n: "07",

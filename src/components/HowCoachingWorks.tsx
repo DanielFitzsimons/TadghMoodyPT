@@ -2,7 +2,7 @@ export default function HowCoachingWorks() {
   const steps = [
     { n: "01", t: "Assessment", d: "Goals, training history, injuries, lifestyle, schedule." },
     { n: "02", t: "Standards Set", d: "Training days, nutrition expectations, communication." },
-    { n: "03", t: "Program Built", d: "Training + nutrition tailored to you — not a template." },
+    { n: "03", t: "Program Built", d: "Training + nutrition tailored to you.ot a template." },
     { n: "04", t: "Execute & Review", d: "Weekly check-ins. Adjustments based on performance." },
     { n: "05", t: "Progress or Correct", d: "Wins are celebrated. Losses are used." },
   ];
@@ -34,7 +34,7 @@ export default function HowCoachingWorks() {
       <div className="mt-10 rounded-3xl border border-white/10 bg-white/[0.03] p-7">
         <p className="text-sm text-white/70">
           <span className="text-white font-semibold">Key rule:</span> the plan adapts to your goals, lifestyle,
-          and starting point — <span className="text-white">the standard does not change.</span>
+          and starting point. <span className="text-white">The standard does not change.</span>
         </p>
       </div>
     </section>

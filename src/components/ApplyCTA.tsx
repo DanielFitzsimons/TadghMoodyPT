@@ -11,8 +11,8 @@ export default function ApplyCTA() {
               This is not a purchase. It’s an application.
             </h3>
             <p className="mt-3 max-w-2xl text-sm text-white/70">
-              Your answers are used to build your approach. If accepted, you’ll receive coaching built around you —
-              not a template.
+              Your answers are used to build your approach. If accepted, you’ll receive coaching built around you.
+              Not a template.
             </p>
           </div>
 

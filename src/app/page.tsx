@@ -4,7 +4,7 @@ import RecordStrip from "@/components/RecordStrip";
 import StandardCards from "@/components/StandardCards";
 import HowCoachingWorks from "@/components/HowCoachingWorks";
 import FitFilter from "@/components/FitFilter";
-import ProofGrid from "@/components/ProofGrid";
+import ProofOrbit from "@/components/ProofOrbit";
 import ApplyCTA from "@/components/ApplyCTA";
 
 export default function HomePage() {
@@ -16,7 +16,7 @@ export default function HomePage() {
       <StandardCards />
       <HowCoachingWorks />
       <FitFilter />
-      <ProofGrid />
+      <ProofOrbit />
       <ApplyCTA />
       <footer className="border-t border-white/10 py-10 text-center text-xs text-white/50">
         © {new Date().getFullYear()} THE STANDARD. Application-only.
