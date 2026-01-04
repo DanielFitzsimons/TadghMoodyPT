@@ -169,26 +169,45 @@ export default function ProofOrbit() {
       master.add(linesTL.play(0), 0.08);
       master.add(nodesTL.play(0), 0.12);
 
-      const st = ScrollTrigger.create({
+
+// Create ONE trigger that ONLY runs onEnter (and never replays early)
+const st = ScrollTrigger.create({
   trigger: stage,
-  start: "top top",      // pin as soon as stage hits top of viewport
-  end: "+=700",          // enough space to see the full deployment
+  start: "top 10%",
+  end: "+=750",
   pin: true,
   pinSpacing: true,
   anticipatePin: 1,
-  toggleActions: "play none none reverse",
+
+  // Important: do NOT allow refresh to trigger it visually
+  // Only fire onEnter/onEnterBack.
   onEnter: () => {
     initStyles();
     updateLines();
-    master.play(0);
+    master.pause(0).play();
   },
   onEnterBack: () => {
     initStyles();
     updateLines();
-    master.play(0);
+    master.pause(0).play();
   },
+
+  // If you DON'T want it to reverse when you scroll back up, keep this:
+  // (prevents weird double-animating)
+  onLeaveBack: () => {
+    // keep it in the finished state if you scroll away
+    master.progress(1);
+  },
+
   onUpdate: updateLines,
 });
+
+// Optional: stop ScrollTrigger refresh from re-running initStyles visually
+ScrollTrigger.addEventListener("refreshInit", () => {
+  // keep hidden until real enter
+  initStyles();
+});
+
 
 
       const onResize = () => {
